@@ -28,7 +28,7 @@ def principale():
     x = 150
     y = 200
     y_mouvement = 0
-    
+
     game_over = False
     while not game_over:
         for event in pygame.event.get():
@@ -45,6 +45,8 @@ def principale():
 
         surface.fill(blue)
         ballon(x, y, img)
+
+        
 
         pygame.display.update()
 
