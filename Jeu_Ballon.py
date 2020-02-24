@@ -18,7 +18,29 @@ pygame.display.set_caption("Ballon Volant")
 
 img = pygame.image.load('ballon.png')
 
+def creaTexteObj(texte, Police):
+    texteSurface = Police.render(texte, True, white)
+    return texteSurface, texteSurface.get_rect()
 
+def message(texte):
+    GOTexte = pygame.font.Font('BradBunR.ttf',150)
+    petitTexte = pygame.font.Font('BradBunR.ttf',20)
+
+    GOTexteSurf, GOTexteRect = creaTexteObj(texte, GOTexte)
+    GOTexteRect.center = surfaceW/2, ((surfaceH/2)-44)
+    surface.blit(GOTexteSurf, GOTexteRect)
+
+    petitTexteSurf, petitTexteRect = creaTexteObj("Appuyez sur une touche pour continuer !", petitTexte)
+    petitTexteRect.center = surfaceW / 2, ((surfaceH / 2) + 44)
+    surface.blit(petitTexteSurf, petitTexteRect)
+
+    pygame.display.update()
+
+
+
+
+def gameOver():
+    message("Boom!!")
 
 def ballon(x, y, image):
     surface.blit(image, (x, y))   # Superposition du ballon sur le background (.blit)
