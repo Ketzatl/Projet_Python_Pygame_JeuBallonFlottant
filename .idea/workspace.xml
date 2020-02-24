@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4a8baac-3d0c-45c2-8380-5277e89d2ea0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pygame2macapp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jeu_Ballon.py" beforeDir="false" afterPath="$PROJECT_DIR$/NomDeVotreAppli.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <workItem from="1582475249705" duration="1215000" />
       <workItem from="1582486106460" duration="1422000" />
       <workItem from="1582494862651" duration="6365000" />
-      <workItem from="1582540086011" duration="8613000" />
+      <workItem from="1582540086011" duration="8972000" />
     </task>
     <servers />
   </component>
