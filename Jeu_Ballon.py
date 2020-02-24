@@ -25,7 +25,7 @@ horloge = pygame.time.Clock()
 
 
 img = pygame.image.load('ballon.png')
-img_nuageB = pygame.image.load('nuageHaut.gif')
+img_nuageB = pygame.image.load('nuageHaut.png')
 img_nuageH = pygame.image.load('nuageBas.png')
 
 def nuages(x_nuage, y_nuage, espace):
@@ -79,7 +79,7 @@ def principale():
     y_mouvement = 0
 
     x_nuage = surfaceW
-    y_nuage = randint(-300, 20)
+    y_nuage = randint(-230, 30)
     espace = ballonH * 3
     nuage_vitesse = 4
 
@@ -106,6 +106,10 @@ def principale():
 
         if y > surfaceH -40 or y < -10:
             gameOver()
+
+        if x_nuage < (-1 * nuageW):             # Répétition des nuages, une fois le précédent sorti del'écran
+            x_nuage = surfaceW
+            y_nuage = randint(-230, 30)         # Repop aléatoire des nuages
 
         pygame.display.update()
 
