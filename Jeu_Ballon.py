@@ -132,6 +132,9 @@ def principale():
             x_nuage = surfaceW
             y_nuage = randint(-230, 30)         # Repop aléatoire des nuages
 
+        if x_nuage < (x - nuageW) < x_nuage + nuage_vitesse:
+            score_actuel += 1
+
         pygame.display.update()
 
 principale()
