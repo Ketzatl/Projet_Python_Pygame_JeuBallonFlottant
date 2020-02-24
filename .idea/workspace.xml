@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4a8baac-3d0c-45c2-8380-5277e89d2ea0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jeu_Ballon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jeu_Ballon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pictures/nuageBas.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pictures/nuageHaut.png" beforeDir="false" />
@@ -88,7 +87,7 @@
       <workItem from="1582475249705" duration="1215000" />
       <workItem from="1582486106460" duration="1422000" />
       <workItem from="1582494862651" duration="6365000" />
-      <workItem from="1582540086011" duration="2146000" />
+      <workItem from="1582540086011" duration="2436000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,7 @@
 import pygame
 import time
+from random import *
+
 
 blue = (113, 177, 227)   # Valeurs RGB Uniquement !
 white = (255, 255, 255)
@@ -12,6 +14,9 @@ surfaceH = 500
 ballonW = 50
 ballonH = 66
 
+nuageW = 256
+nuageH = 256
+
 
 
 surface = pygame.display.set_mode((surfaceW, surfaceH))
@@ -20,7 +25,12 @@ horloge = pygame.time.Clock()
 
 
 img = pygame.image.load('ballon.png')
+img_nuageB = pygame.image.load('nuageHaut.gif')
+img_nuageH = pygame.image.load('nuageBas.png')
 
+def nuages(x_nuage, y_nuage, espace):
+    surface.blit(img_nuageH,(x_nuage, y_nuage))
+    surface.blit(img_nuageB,(x_nuage, y_nuage + nuageW + espace))
 
 def rejoueOuQuitte():
     for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP, pygame.QUIT]):
@@ -68,6 +78,11 @@ def principale():
     y = 200
     y_mouvement = 0
 
+    x_nuage = surfaceW
+    y_nuage = randint(-300, 20)
+    espace = ballonH * 3
+    nuage_vitesse = 4
+
     game_over = False
     while not game_over:
         for event in pygame.event.get():
@@ -84,6 +99,10 @@ def principale():
 
         surface.fill(blue)
         ballon(x, y, img)
+
+        nuages(x_nuage, y_nuage, espace)
+
+        x_nuage -= nuage_vitesse
 
         if y > surfaceH -40 or y < -10:
             gameOver()
