@@ -1,4 +1,5 @@
 import pygame
+import time
 
 blue = (113, 177, 227)   # Valeurs RGB Uniquement !
 white = (255, 255, 255)
@@ -15,8 +16,21 @@ ballonH = 66
 
 surface = pygame.display.set_mode((surfaceW, surfaceH))
 pygame.display.set_caption("Ballon Volant")
+horloge = pygame.time.Clock()
+
 
 img = pygame.image.load('ballon.png')
+
+
+def rejoueOuQuitte():
+    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP, pygame.QUIT]):
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            quit()
+        elif event.type == pygame.KEYUP:
+            continue
+        return event.key
+    return None
 
 def creaTexteObj(texte, Police):
     texteSurface = Police.render(texte, True, white)
@@ -35,9 +49,12 @@ def message(texte):
     surface.blit(petitTexteSurf, petitTexteRect)
 
     pygame.display.update()
+    time.sleep(2)
 
+    while rejoueOuQuitte() == None:
+        horloge.tick()
 
-
+    principale()
 
 def gameOver():
     message("Boom!!")
