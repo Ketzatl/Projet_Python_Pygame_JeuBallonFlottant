@@ -46,7 +46,8 @@ def principale():
         surface.fill(blue)
         ballon(x, y, img)
 
-        
+        if y > surfaceH -40 or y < -10:
+            gameOver()
 
         pygame.display.update()
 
