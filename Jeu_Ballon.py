@@ -107,6 +107,16 @@ def principale():
         if y > surfaceH -40 or y < -10:
             gameOver()
 
+        if x + ballonW > x_nuage + 40:
+            if y < y_nuage + nuageH - 88:
+                if x - ballonW < x_nuage + nuageW - 20:
+                    gameOver()
+
+        if x + ballonW > x_nuage + 40:
+            if y + ballonH > y_nuage + nuageH + espace + 44:
+                if x - ballonW < x_nuage + nuageW - 20:
+                    gameOver()
+
         if x_nuage < (-1 * nuageW):             # Répétition des nuages, une fois le précédent sorti del'écran
             x_nuage = surfaceW
             y_nuage = randint(-230, 30)         # Repop aléatoire des nuages
