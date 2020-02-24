@@ -28,6 +28,12 @@ img = pygame.image.load('ballon.png')
 img_nuageB = pygame.image.load('nuageHaut.png')
 img_nuageH = pygame.image.load('nuageBas.png')
 
+def score(compte):
+    police = pygame.font.Font('BradBunR.ttf', 16)
+    texte = police.render("Score : " + str(compte), True, white)
+    surface.blit(texte, [10, 0])
+
+
 def nuages(x_nuage, y_nuage, espace):
     surface.blit(img_nuageH,(x_nuage, y_nuage))
     surface.blit(img_nuageB,(x_nuage, y_nuage + nuageW + espace))
@@ -83,6 +89,9 @@ def principale():
     espace = ballonH * 3
     nuage_vitesse = 4
 
+    score_actuel = 0
+
+
     game_over = False
     while not game_over:
         for event in pygame.event.get():
@@ -101,6 +110,8 @@ def principale():
         ballon(x, y, img)
 
         nuages(x_nuage, y_nuage, espace)
+
+        score(score_actuel)
 
         x_nuage -= nuage_vitesse
 
