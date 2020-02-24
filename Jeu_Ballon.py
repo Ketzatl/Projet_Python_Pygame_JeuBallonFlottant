@@ -57,7 +57,7 @@ def message(texte):
     petitTexte = pygame.font.Font('BradBunR.ttf',20)
 
     GOTexteSurf, GOTexteRect = creaTexteObj(texte, GOTexte)
-    GOTexteRect.center = surfaceW/2, ((surfaceH/2)-44)
+    GOTexteRect.center = surfaceW / 2, ((surfaceH/2)-44)
     surface.blit(GOTexteSurf, GOTexteRect)
 
     petitTexteSurf, petitTexteRect = creaTexteObj("Appuyez sur une touche pour continuer !", petitTexte)
@@ -117,6 +117,23 @@ def principale():
 
         if y > surfaceH -40 or y < -10:
             gameOver()
+
+        if 3 < score_actuel  < 5:
+            nuage_vitesse = 8
+            espace = ballon * 2.8
+
+        if 8 < score_actuel <13:
+            nuage_vitesse = 10
+            espace = ballon * 2.6
+
+        if 18 < score_actuel < 25:
+            nuage_vitesse = 12
+            espace = ballon * 2.4
+
+        if 33 < score_actuel < 44:
+            nuage_vitesse = 15
+            espace = ballon * 2
+
 
         if x + ballonW > x_nuage + 40:
             if y < y_nuage + nuageH - 88:
