@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a4a8baac-3d0c-45c2-8380-5277e89d2ea0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jeu_Ballon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jeu_Ballon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jeu_Ballon.py" beforeDir="false" afterPath="$PROJECT_DIR$/NomDeVotreAppli.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Jeu_Ballon" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="NomDeVotreAppli" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Projet_JeuBallon_Pygame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -51,7 +51,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Jeu_Ballon.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NomDeVotreAppli.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +86,7 @@
       <workItem from="1582475249705" duration="1215000" />
       <workItem from="1582486106460" duration="1422000" />
       <workItem from="1582494862651" duration="6365000" />
-      <workItem from="1582540086011" duration="7238000" />
+      <workItem from="1582540086011" duration="8613000" />
     </task>
     <servers />
   </component>
@@ -94,42 +94,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="63" key="GridCell.Tab.0.bottom" timestamp="1582557649558">
+    <state width="1398" height="321" key="GridCell.Tab.0.bottom" timestamp="1582563274330">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="63" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582557649558" />
+    <state width="1398" height="321" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582563274330" />
     <state width="1396" height="226" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582486091206" />
-    <state width="1398" height="63" key="GridCell.Tab.0.center" timestamp="1582557649557">
+    <state width="1398" height="321" key="GridCell.Tab.0.center" timestamp="1582563274330">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="63" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582557649557" />
+    <state width="1398" height="321" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582563274330" />
     <state width="1396" height="226" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582486091205" />
-    <state width="1398" height="63" key="GridCell.Tab.0.left" timestamp="1582557649557">
+    <state width="1398" height="321" key="GridCell.Tab.0.left" timestamp="1582563274329">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="63" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582557649557" />
+    <state width="1398" height="321" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582563274329" />
     <state width="1396" height="226" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582486091204" />
-    <state width="1398" height="63" key="GridCell.Tab.0.right" timestamp="1582557649557">
+    <state width="1398" height="321" key="GridCell.Tab.0.right" timestamp="1582563274330">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="63" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582557649557" />
+    <state width="1398" height="321" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582563274330" />
     <state width="1396" height="226" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582486091205" />
-    <state width="1398" height="284" key="GridCell.Tab.1.bottom" timestamp="1582505641554">
+    <state width="1398" height="284" key="GridCell.Tab.1.bottom" timestamp="1582563089070">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582505641554" />
-    <state width="1398" height="284" key="GridCell.Tab.1.center" timestamp="1582505641553">
+    <state width="1398" height="284" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582563089070" />
+    <state width="1398" height="284" key="GridCell.Tab.1.center" timestamp="1582563089069">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582505641553" />
-    <state width="1398" height="284" key="GridCell.Tab.1.left" timestamp="1582505641553">
+    <state width="1398" height="284" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582563089069" />
+    <state width="1398" height="284" key="GridCell.Tab.1.left" timestamp="1582563089068">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582505641553" />
-    <state width="1398" height="284" key="GridCell.Tab.1.right" timestamp="1582505641553">
+    <state width="1398" height="284" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582563089068" />
+    <state width="1398" height="284" key="GridCell.Tab.1.right" timestamp="1582563089069">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582505641553" />
+    <state width="1398" height="284" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582563089069" />
     <state x="380" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1582540091455">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -140,6 +140,6 @@
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1582503119713" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Projet_JeuBallon_Pygame$Jeu_Ballon.coverage" NAME="Jeu_Ballon Coverage Results" MODIFIED="1582557649549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_JeuBallon_Pygame$Jeu_Ballon.coverage" NAME="NomDeVotreAppli Coverage Results" MODIFIED="1582563274322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
