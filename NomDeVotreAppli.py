@@ -1,12 +1,14 @@
 import pygame
 import time
 from random import *
+import sqlite3
 
 
 blue = (113, 177, 227)   # Valeurs RGB Uniquement !
 white = (255, 255, 255)
 
 pygame.init()
+Donnees = "/Users/morgannott/Documents/Dev_app/xX_PYTHON_Projets_GitHub/Projet_JeuBallon_Pygame/BDD_Ballon_Flottant/Donnees.sq3"
 
 surfaceW = 800
 surfaceH = 500
