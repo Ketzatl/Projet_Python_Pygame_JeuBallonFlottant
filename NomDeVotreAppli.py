@@ -9,6 +9,23 @@ white = (255, 255, 255)
 
 pygame.init()
 Donnees = "/Users/morgannott/Documents/Dev_app/xX_PYTHON_Projets_GitHub/Projet_JeuBallon_Pygame/BDD_Ballon_Flottant/Donnees.sq3"
+conn = sqlite3.connect(Donnees)
+cur = conn.cursor()
+
+## -------- Après le 1er lancement du programme, mettre les 5 lignes suivantes en commentaire !
+
+## cur.execute("CREATE TABLE joueurs (score integer)")
+
+## -------- Création d'un fichier (avec 2 valeurs à l'intérieur) pour le 1er lancement uniquement
+
+## cur.execute("INSERT INTO joueurs (score) VALUES (0)")
+## conn.commit()
+
+## cur.execute("INSERT INTO joueurs (score) VALUES (0)")
+## conn.commit()
+
+
+# -------------------------------------------------------------------------
 
 surfaceW = 800
 surfaceH = 500
@@ -30,10 +47,15 @@ img = pygame.image.load('ballon.png')
 img_nuageB = pygame.image.load('nuageHaut.png')
 img_nuageH = pygame.image.load('nuageBas.png')
 
+def Hscore(compte):
+    police = pygame.font.Font('BradBunR.ttf', 16)
+    texte = police.render("High Score : " + str(compte), True, white)
+    surface.blit(texte, [700, 4])
+
 def score(compte):
     police = pygame.font.Font('BradBunR.ttf', 16)
     texte = police.render("Score : " + str(compte), True, white)
-    surface.blit(texte, [10, 0])
+    surface.blit(texte, [10, 4])
 
 
 def nuages(x_nuage, y_nuage, espace):
@@ -74,8 +96,27 @@ def message(texte):
 
     principale()
 
-def gameOver():
+def gameOver(score_actuel):
+    a = [str(score_actuel)]
+
+    Donnees = "/Users/morgannott/Documents/Dev_app/xX_PYTHON_Projets_GitHub/Projet_JeuBallon_Pygame/BDD_Ballon_Flottant/Donnees.sq3"
+    conn = sqlite3.connect(Donnees)
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM joueurs")
+    liste = list(cur)
+
+    hscore = []
+    for i in range(0, len(liste)):
+        hscore += liste[i]
+
+    if (int(hscore[-1]) < score_actuel):
+        cur.execute("INSERT INTO joueurs(score) VALUES(?)", a)
+        conn.commit()
+        cur.close()
+        conn.close()
+
     message("Boom!!")
+
 
 def ballon(x, y, image):
     surface.blit(image, (x, y))   # Superposition du ballon sur le background (.blit)
@@ -115,37 +156,51 @@ def principale():
 
         score(score_actuel)
 
+        cur.execute("SELECT * FROM joueurs")
+        liste = list(cur)
+        print(cur)
+        print(liste)
+
+
+        hscore = []
+        for i in range(0, len(liste)):
+            hscore += liste[i]
+        print(hscore)
+
+        Hscore(hscore[-1])
+
+
         x_nuage -= nuage_vitesse
 
         if y > surfaceH -40 or y < -10:
-            gameOver()
+            gameOver(score_actuel)
 
-        if 3 < score_actuel  < 5:
+        if 4 <= score_actuel  < 5:
             nuage_vitesse = 8
-            espace = ballon * 2.8
+            espace = ballonH * 2.8
 
-        if 8 < score_actuel <13:
+        if 8 <= score_actuel < 13:
             nuage_vitesse = 10
-            espace = ballon * 2.6
+            espace = ballonH * 2.6
 
-        if 18 < score_actuel < 25:
+        if 18 <= score_actuel < 25:
             nuage_vitesse = 12
-            espace = ballon * 2.4
+            espace = ballonH * 2.4
 
-        if 33 < score_actuel < 44:
+        if 33 <= score_actuel < 44:
             nuage_vitesse = 15
-            espace = ballon * 2
+            espace = ballonH * 2
 
 
         if x + ballonW > x_nuage + 40:
-            if y < y_nuage + nuageH - 88:
+            if y < y_nuage + nuageH - 80:
                 if x - ballonW < x_nuage + nuageW - 20:
-                    gameOver()
+                    gameOver(score_actuel)
 
         if x + ballonW > x_nuage + 40:
-            if y + ballonH > y_nuage + nuageH + espace + 44:
+            if y + ballonH > y_nuage + nuageH + espace + 10:
                 if x - ballonW < x_nuage + nuageW - 20:
-                    gameOver()
+                    gameOver(score_actuel)
 
         if x_nuage < (-1 * nuageW):             # Répétition des nuages, une fois le précédent sorti del'écran
             x_nuage = surfaceW
