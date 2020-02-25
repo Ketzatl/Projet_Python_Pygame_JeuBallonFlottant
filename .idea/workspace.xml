@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4a8baac-3d0c-45c2-8380-5277e89d2ea0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BDD_Ballon_Flottant/Donnees.sq3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NomDeVotreAppli.py" beforeDir="false" afterPath="$PROJECT_DIR$/NomDeVotreAppli.py" afterDir="false" />
     </list>
@@ -21,12 +22,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YDRb96yxMdbzAUwceGogRo2fXV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -88,33 +93,36 @@
       <workItem from="1582486106460" duration="1422000" />
       <workItem from="1582494862651" duration="6365000" />
       <workItem from="1582540086011" duration="9810000" />
-      <workItem from="1582623538135" duration="890000" />
+      <workItem from="1582623538135" duration="4672000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom" timestamp="1582589528924">
+    <state width="676" height="156" key="GridCell.Tab.0.bottom" timestamp="1582637461537">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582589528924" />
+    <state width="676" height="156" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582637461537" />
     <state width="1396" height="226" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1582486091206" />
-    <state width="1398" height="284" key="GridCell.Tab.0.center" timestamp="1582589528923">
+    <state width="676" height="156" key="GridCell.Tab.0.center" timestamp="1582637461535">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582589528923" />
+    <state width="676" height="156" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582637461535" />
     <state width="1396" height="226" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1582486091205" />
-    <state width="1398" height="284" key="GridCell.Tab.0.left" timestamp="1582589528922">
+    <state width="676" height="156" key="GridCell.Tab.0.left" timestamp="1582637461535">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582589528922" />
+    <state width="676" height="156" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582637461535" />
     <state width="1396" height="226" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1582486091204" />
-    <state width="1398" height="284" key="GridCell.Tab.0.right" timestamp="1582589528923">
+    <state width="676" height="156" key="GridCell.Tab.0.right" timestamp="1582637461536">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="284" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582589528923" />
+    <state width="676" height="156" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582637461536" />
     <state width="1396" height="226" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1582486091205" />
     <state width="1398" height="284" key="GridCell.Tab.1.bottom" timestamp="1582589528925">
       <screen x="0" y="0" width="1440" height="900" />
@@ -147,5 +155,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projet_JeuBallon_Pygame$Jeu_Ballon.coverage" NAME="NomDeVotreAppli Coverage Results" MODIFIED="1582563274322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_JeuBallon_Pygame$NomDeVotreAppli.coverage" NAME="NomDeVotreAppli Coverage Results" MODIFIED="1582637461525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
