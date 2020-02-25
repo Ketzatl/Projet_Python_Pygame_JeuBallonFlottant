@@ -1,4 +1,4 @@
 
     - Projet Jeu_Ballon_Flottant
     
-        Initiation au Python avec le module Pygame.
+        Initiation à Python avec le module Pygame.
